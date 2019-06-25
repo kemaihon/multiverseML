@@ -6,7 +6,9 @@ import datetime
 
 #git
 def git_init():
-    return subprocess.check_output(['git','init'])
+    subprocess.check_output(['git','init'])
+    subprocess.check_output(['git','add','.'])
+    subprocess.check_output(['git','commit', '-m', '"Initial commit"'])
 
 def get_git_revision_hash():
     return subprocess.check_output(['git', 'rev-parse', 'HEAD'])
@@ -14,8 +16,9 @@ def get_git_revision_hash():
 def get_git_revision_short_hash():
     return subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'])
 
-def git_commit(time):
-    return subprocess.check_output(['git','commit', '-a', '-m', time])
+def git_commit(time):    
+    subprocess.check_output(['git','add','.'])
+    subprocess.check_output(['git','commit', '-m', time])
 
 #universe
 def discover(universe):
@@ -34,7 +37,10 @@ def timeline(universe, rev_hash, rev_short_hash):
 
 #metrics
 def metrics(universe, model, metrics, param):
-    git_init()
+    try:
+        get_git_revision_hash()
+    except:
+        git_init()
     #discover Universe
     universe = discover(universe)
     #start_timeline by commit ID
