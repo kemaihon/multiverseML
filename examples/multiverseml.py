@@ -37,21 +37,28 @@ def timeline(universe, rev_hash, rev_short_hash):
 
 #metrics
 def metrics(universe, model, metrics, param):
+
+    #Git init
     try:
         get_git_revision_hash()
     except:
         git_init()
+
     #discover Universe
     universe = discover(universe)
-    #start_timeline by commit ID
+
+    #start Timeline by commit ID
     rev_short_hash = timeline(universe, get_git_revision_hash(), get_git_revision_short_hash())
 
+    #define Way
     metric_path = str(rev_short_hash) + '/'
     metric_file = str(model['name']) + '.json'
 
+    #set point in Spacetime
     time = datetime.datetime.now()
     time = time.strftime("%H:%M:%S %d/%m/%Y")
 
+    #params
     info = {
         'model': model['name'],
         'metrics': metrics,
