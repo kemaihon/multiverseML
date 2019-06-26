@@ -1,3 +1,4 @@
+LICENSE
 README.md
 setup.cfg
 setup.py
@@ -5,4 +6,5 @@ multiverseML.egg-info/PKG-INFO
 multiverseML.egg-info/SOURCES.txt
 multiverseML.egg-info/dependency_links.txt
 multiverseML.egg-info/top_level.txt
+multiverseml/__init__.py
 multiverseml/multiverseml.py
