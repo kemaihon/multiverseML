@@ -16,4 +16,4 @@ Dito isso, o <b>multiverseML</b> organizará o seu modelo nos conceitos de:
 
 
 ### Instalação versão 0.1.4-Alpha
-`pip install -i https://test.pypi.org/simple/ multiverseML`
+`pip install multiverseML`
