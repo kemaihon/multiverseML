@@ -39,7 +39,8 @@ Então criamos uma variável <i>model</i> com a finalidade de armazenar o nome e
 
 Agora vamos rastrear as métricas:
 
-``` metrics = {
+``` 
+    metrics = {
         'rmse': rmse,
         'r2': r2,
         'mae': mae
