@@ -33,7 +33,8 @@ Então criamos uma variável <i>model</i> com a finalidade de armazenar o nome e
 ˋˋˋ model = {
         'name': 'Linear Regression',
         'model': lr
-    }ˋˋˋ
+    }
+ˋˋˋ
 
 Agora vamos rastrear as métricas:
 
@@ -41,14 +42,16 @@ Agora vamos rastrear as métricas:
         'rmse': rmse,
         'r2': r2,
         'mae': mae
-    }```
+    }
+```
 
 É possível também adicionar os parâmetros utilizados para o modelo.
 
 ``` param = {
         'alpha': alpha,
         'l1_ratio': l1_ratio
-    }```
+    }
+```
 
 Por fim, deve-se enviar os dados para o <i>MultiverseML</i>.
 
