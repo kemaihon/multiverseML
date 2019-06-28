@@ -15,7 +15,7 @@ Dito isso, o <b>multiverseML</b> organizará o seu modelo nos conceitos de:
 - <b>Reality(Realidade):</b> Realidade é a linha do tempo eleita para produção. Poder ser disponibilizado um servidor HTTP ou um processo Batch.
 
 
-### Instalação versão 0.1.5-Alpha
+### Instalação versão 0.1.6-Alpha
 `pip install multiverseML`
 
 ### Utilização
