@@ -56,7 +56,7 @@ Agora vamos rastrear as métricas:
     }
 ```
 
-Por fim, deve-se enviar os dados para o <i>MultiverML</i>.
+Por fim, deve-se enviar os dados para o <i>MultiverseML</i>.
 
 `multiverseml.metrics(universe, model, metrics, param)`
     
