@@ -1,4 +1,4 @@
-/build/*
-/dist/*
+build/
+dist/
 __pycache__
-/multiverseML.egg-info/*
+multiverseML.egg-info/
