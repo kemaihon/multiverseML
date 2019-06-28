@@ -11,7 +11,7 @@ Dito isso, o <b>multiverseML</b> organizará o seu modelo nos conceitos de:
 
 - <b>Multiverse(Multiverso):</b> Diretório central de armazenamento de todos os universos.
 - <b>Universe(Universo):</b> O universo é todo arquivo no qual exista um monitoramento ativo. Um universo pode ser um desafio a ser resolvido, como uma identificação de fraude ou um reconhecimento de imagem.
-- <b>Timeline(Linha do Tempo):</b> Cada Universo terá multiplas linhas temporais. Cada linha temporal será uma execução com sucesso do monitoramento. Cada linah temporal pode ter um modelo diferente, métricas diferentes e parâmetros diferentes. A timeline é baseada no versionamento do Git.
+- <b>Timeline(Linha do Tempo):</b> Cada Universo terá multiplas linhas temporais. Cada linha temporal será uma execução com sucesso do monitoramento. Cada linha temporal pode ter um modelo diferente, métricas diferentes e parâmetros diferentes. A timeline é baseada no versionamento do Git.
 - <b>Reality(Realidade):</b> Realidade é a linha do tempo eleita para produção. Poder ser disponibilizado um servidor HTTP ou um processo Batch.
 
 
