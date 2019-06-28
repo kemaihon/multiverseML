@@ -30,31 +30,25 @@ Após, será necessário definir qual será o nome do universo a ser criado. Sej
 
 Então criamos uma variável <i>model</i> com a finalidade de armazenar o nome e o modelo utilizado ("lr" no exemplo é um modelo de regressão linear).
 
-ˋˋˋ
-    model = {
+ˋˋˋ model = {
         'name': 'Linear Regression',
         'model': lr
-    }
-ˋˋˋ
+    }ˋˋˋ
 
 Agora vamos rastrear as métricas:
 
-```
-    metrics = {
+``` metrics = {
         'rmse': rmse,
         'r2': r2,
         'mae': mae
-    }
-```
+    }```
 
 É possível também adicionar os parâmetros utilizados para o modelo.
 
-```
-    param = {
+``` param = {
         'alpha': alpha,
         'l1_ratio': l1_ratio
-    }
-```
+    }```
 
 Por fim, deve-se enviar os dados para o <i>MultiverseML</i>.
 
