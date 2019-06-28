@@ -13,8 +13,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 
 import sys
+sys.path.append('../')
 import multiverseml
-universe = 'Cenário1'
+universe = 'cosmos'
 
 
 def eval_metrics(actual, pred):
@@ -50,7 +51,7 @@ if __name__ == "__main__":
 
     (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
 
-    model_name = 'Elastic'
+    name = 'Elastic'
 
     param = {
         'alpha': alpha,
@@ -64,8 +65,14 @@ if __name__ == "__main__":
     }
 
     model = {
-        'name': model_name,
+        'name': name,
         'model': lr
     }
 
     multiverseml.metrics(universe, model, metrics, param)
+
+    path = 'C:/Users/ccsantos/Desktop/Temp/examples/multiverse/cosmos/090ae7c/Elastic.pkl'
+    reality = multiverseml.access_reality(path)
+    print(reality)
+    multiverseml.worm_hole(reality)
+
