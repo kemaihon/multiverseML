@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='multiverseML',
-    version='0.1.6-Alpha',
+    version='0.1.7-Alpha',
     url='https://github.com/cccadet/multiverseML/',
     license='GNU General Public License v3.0',
     author='Cristian Carlos dos Santos',
@@ -19,16 +19,8 @@ setup(
     long_description_content_type='text/markdown',
     packages=['multiverseml'],
     install_requires=[
-        'subprocess',
-        'os',
-        'json',
-        'datetime',
-        'inspect',
-        'pickle',
-        'shutil',
         'numpy',
         'pandas',
-        'flask',
-        'pandas'
+        'flask'
     ],
 )
