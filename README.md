@@ -30,12 +30,12 @@ Após, será necessário definir qual será o nome do universo a ser criado. Sej
 
 Então criamos uma variável <i>model</i> com a finalidade de armazenar o nome e o modelo utilizado ("lr" no exemplo é um modelo de regressão linear).
 
-ˋˋˋ
+```
     model = {
         'name': 'Linear Regression',
         'model': lr
     }
-ˋˋˋ
+```
 
 Agora vamos rastrear as métricas:
 
