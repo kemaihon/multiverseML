@@ -1,5 +1,0 @@
-build/*
-dist/*
-.vscode/*
-__pycache__
-multiverseML.egg-info/*
