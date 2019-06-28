@@ -15,5 +15,46 @@ Dito isso, o <b>multiverseML</b> organizará o seu modelo nos conceitos de:
 - <b>Reality(Realidade):</b> Realidade é a linha do tempo eleita para produção. Poder ser disponibilizado um servidor HTTP ou um processo Batch.
 
 
-### Instalação versão 0.1.4-Alpha
+### Instalação versão 0.1.5-Alpha
 `pip install multiverseML`
+
+### Utilização
+
+Para utilização é necessário primeiramente, obviamente, a importação do módulo:
+`import multiverseml`
+
+Após, será necessário definir qual será o nome do universo a ser criado. Seja criativo!
+`universe = 'theoretical'`
+
+Então criamos uma variável <i>model</i> com a finalidade de armazenar o nome e o modelo utilizado ("lr" no exemplo é um modelo de regressão linear).
+
+ˋˋˋ
+    model = {
+        'name': 'Linear Regression',
+        'model': lr
+    }
+ˋˋˋ
+
+Agora vamos rastrear as métricas:
+
+```
+    metrics = {
+        'rmse': rmse,
+        'r2': r2,
+        'mae': mae
+    }
+```
+
+É possível também adicionar os parâmetros utilizados para o modelo.
+
+```
+    param = {
+        'alpha': alpha,
+        'l1_ratio': l1_ratio
+    }
+```
+
+Por fim, deve-se enviar os dados para o <i>MultiverML</i>.
+
+`multiverseml.metrics(universe, model, metrics, param)`
+    

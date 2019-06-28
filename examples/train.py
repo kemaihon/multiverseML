@@ -13,7 +13,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 
 import sys
-sys.path.append('../')
 import multiverseml
 universe = 'Cenário1'
 
@@ -51,12 +50,7 @@ if __name__ == "__main__":
 
     (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
 
-    print("Elasticnet model (alpha=%f, l1_ratio=%f):" % (alpha, l1_ratio))
-    print("  RMSE: %s" % rmse)
-    print("  MAE: %s" % mae)
-    print("  R2: %s" % r2)
-
-    name = 'Elastic'
+    model_name = 'Elastic'
 
     param = {
         'alpha': alpha,
@@ -70,7 +64,7 @@ if __name__ == "__main__":
     }
 
     model = {
-        'name': name,
+        'name': model_name,
         'model': lr
     }
 
