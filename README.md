@@ -21,9 +21,11 @@ Dito isso, o <b>multiverseML</b> organizará o seu modelo nos conceitos de:
 ### Utilização
 
 Para utilização é necessário primeiramente, obviamente, a importação do módulo:
+
 `import multiverseml`
 
 Após, será necessário definir qual será o nome do universo a ser criado. Seja criativo!
+
 `universe = 'theoretical'`
 
 Então criamos uma variável <i>model</i> com a finalidade de armazenar o nome e o modelo utilizado ("lr" no exemplo é um modelo de regressão linear).
