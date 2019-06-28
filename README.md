@@ -20,7 +20,7 @@ Dito isso, o <b>multiverseML</b> organizará o seu modelo nos conceitos de:
 
 ### Utilização
 
-Para utilização é necessário primeiramente, obviamente, a importação do módulo:
+Para utilização é necessário primeiramente a importação do módulo:
 
 `import multiverseml`
 
